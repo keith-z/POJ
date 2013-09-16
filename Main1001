@@ -1,0 +1,15 @@
+package POJ;
+
+import java.math.BigDecimal;
+import java.util.Scanner;
+public class Main1001 {
+	public static void main(String args[]){
+		Scanner cin=new Scanner(System.in);
+		while(cin.hasNext()){
+			BigDecimal num=cin.nextBigDecimal();
+			int mi=cin.nextInt();
+			BigDecimal result=num.pow(mi).stripTrailingZeros();
+		    System.out.println(result.toPlainString().replaceAll("^0", ""));
+		}
+	}
+}
