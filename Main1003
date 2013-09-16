@@ -1,0 +1,22 @@
+package POJ;
+
+import java.util.Scanner;
+public class Main1003 {
+	public static void main(String args[]){
+		Scanner cin=new Scanner(System.in);
+		while(cin.hasNextFloat()){
+			float f1=cin.nextFloat();
+			if(f1==0){
+				break;
+			}
+			float f0=0;
+			int n=2;
+			while(f0<f1){
+				f0+=1.0/n;
+				n++;
+			}
+			System.out.println(n-2+" card(s)");
+		}
+	}
+}
+
